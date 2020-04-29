@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c3033"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:background="#2c3033"
+        android:gravity="right"
+        android:textSize="38dp"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="32dp" />
+
+
+    <TextView
+        android:id="@+id/textoper"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:background="#2c3033"
+
+        android:gravity="right"
+        android:textColor="#ffffff"
+        android:textSize="38dp" />
+
+    <View
+        style="@style/horl"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/text"
+        android:layout_marginTop="56dp"
+        android:background="#0c0d0d" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/seven"
+                    style="@style/calc_button"
+                    android:background="@drawable/button"
+                    android:text="7">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/eight"
+                    style="@style/calc_button"
+                    android:background="@drawable/button"
+                    android:text="8">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/nine"
+                    style="@style/calc_button"
+                    android:background="@drawable/button"
+                    android:text="9">
+
+                </Button>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/four"
+                    android:background="@drawable/button"
+                    style="@style/calc_button"
+                    android:text="4">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/five"
+                    android:background="@drawable/button"
+                    style="@style/calc_button"
+                    android:text="5">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/six"
+                    android:background="@drawable/button"
+                    style="@style/calc_button"
+                    android:text="6">
+
+                </Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/one"
+                    style="@style/calc_button"
+                    android:background="@drawable/button"
+                    android:text="1">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/two"
+                    style="@style/calc_button"
+                    android:background="@drawable/button"
+                    android:text="2">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/three"
+                    style="@style/calc_button"
+                    android:background="@drawable/button"
+                    android:text="3">
+
+                </Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/zero"
+                    style="@style/calc_button"
+                    android:background="@drawable/button"
+                    android:text="0">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/coma"
+                    style="@style/calc_button"
+                    android:background="@drawable/button"
+                    android:text=".">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/res"
+                    style="@style/calc_button"
+                    android:background="@drawable/button"
+                    android:text="=">
+
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="152dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/clear"
+                style="@style/calc_button2"
+                android:background="@drawable/button"
+                android:text="C">
+
+            </Button>
+
+            <Button
+                android:id="@+id/clearall"
+                style="@style/calc_button2"
+                android:background="@drawable/button"
+                android:text="CE">
+
+            </Button>
+
+            <Button
+                android:id="@+id/division"
+                style="@style/calc_button2"
+                android:background="@drawable/button"
+                android:text="/">
+
+            </Button>
+
+            <Button
+                android:id="@+id/multiplication"
+                style="@style/calc_button2"
+                android:background="@drawable/button"
+                android:text="x">
+
+            </Button>
+
+            <Button
+                android:id="@+id/minus"
+                style="@style/calc_button2"
+                android:background="@drawable/button"
+                android:text="-">
+
+            </Button>
+
+            <Button
+                android:id="@+id/plus"
+                style="@style/calc_button2"
+                android:background="@drawable/button"
+                android:text="+">
+
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="134dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+
+                android:id="@+id/percent"
+                style="@style/calc_button2"
+                android:background="@drawable/button"
+                android:onClick="percent"
+                android:text="%">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/sin"
+                style="@style/calc_button2"
+                android:background="@drawable/button"
+                android:onClick="sinus"
+                android:text="sin">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/cos"
+                style="@style/calc_button2"
+                android:layout_width="match_parent"
+                android:background="@drawable/button"
+                android:onClick="cosin"
+                android:text="cos">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/tan"
+                style="@style/calc_button2"
+                android:background="@drawable/button"
+                android:onClick="tangen"
+                android:text="tan">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/pi"
+                style="@style/calc_button2"
+                android:background="@drawable/button"
+                android:onClick="log"
+                android:text="log">
+
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+
+                android:id="@+id/exp"
+                style="@style/calc_button2"
+                android:background="@drawable/button"
+                android:text="e">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/root"
+                style="@style/calc_button2"
+                android:background="@drawable/button"
+                android:text="√"
+                android:onClick="rootis">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/degree"
+                style="@style/calc_button2"
+                android:layout_width="match_parent"
+                android:background="@drawable/button"
+                android:onClick="stepen"
+                android:text="^">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/factor"
+                style="@style/calc_button2"
+                android:background="@drawable/button"
+                android:onClick="factorial"
+                android:text="!">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/abs"
+                style="@style/calc_button2"
+                android:background="@drawable/button"
+                android:onClick="ln"
+                android:text="ln">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
